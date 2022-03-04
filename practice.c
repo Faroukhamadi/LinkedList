@@ -160,26 +160,6 @@ void reverseLinkedList() {
 }
 
 
-// void sortLinkedList() {
-//     // We are going to try doing bubble sort
-//     Node* current = head;
-//     printf("Heads value: %d\n", head->value);
-
-//     while (current && current->next) {
-//     Node* currentNext = current->next;
-//         while (currentNext && currentNext->next) {
-//             // TODO: add condition here
-//             if (currentNext->value > currentNext->next->value) {
-//                 int temporary = currentNext->value;
-//                 currentNext->value = currentNext->next->value;
-//                 currentNext->next->value = temporary;
-//             }
-//             currentNext = currentNext->next;
-//         }
-//         current = current->next;
-//     }
-// }
-
 void sortLinkedList() {
     if (head == NULL || head->next == NULL) {
         return;
@@ -229,7 +209,6 @@ int main() {
     printf("\nLinked List after getting sorted\n");
     sortLinkedList();
     printLinkedList();
-    
     
     return 0;
 }
